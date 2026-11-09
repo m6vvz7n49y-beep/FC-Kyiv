@@ -1,0 +1,66 @@
+index.html
+<!DOCTYPE html>
+<html lang="uk" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FC Kyiv | Офіційний сайт дворової команди</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandRed: '#E50914',
+            brandDark: '#0B0B0B',
+            brandGray: '#161616',
+            brandAccent: '#FF2E2E'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .glow-red {
+      box-shadow: 0 0 25px rgba(229, 9, 20, 0.35);
+    }
+    .text-glow {
+      text-shadow: 0 0 10px rgba(229, 9, 20, 0.6);
+    }
+    .bg-grid {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-brandDark text-gray-100 font-sans antialiased selection:bg-brandRed selection:text-white bg-grid min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b border-red-950/40">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <!-- Shield Logo Icon -->
+        <div class="w-10 h-10 bg-gradient-to-br from-brandRed to-black rounded-lg flex items-center justify-center border border-red-600/50 shadow-lg shadow-red-900/40">
+          <i class="fa-solid fa-shield-halved text-white text-xl"></i>
+        </div>
+        <div>
+          <span class="text-xl font-black tracking-wider text-white">FC <span class="text-brandRed">KYIV</span></span>
+          <span class="block text-[10px] tracking-widest uppercase text-gray-400 font-semibold">Street Football Club</span>
+        </div>
+      </div>
+      <a href="https://www.instagram.com/fckyiv_official?srtk=MTc2aTB0aXplbWF3OQ==" target="_blank" class="flex items-center space-x-2 bg-gradient-to-r from-red-600 to-brandRed hover:from-red-500 hover:to-red-600 text-white font-bold py-2 px-4 rounded-xl text-sm transition-all duration-300 shadow-md shadow-red-900/30">
+        <i class="fa-brands fa-instagram text-base"></i>
+        <span class="hidden sm:inline">Instagram</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-12 flex-grow">
+    
+    <!-- Hero Banner -->
+    <section class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brandGray via-black to-red-950/30 border border-red-900/30 p-8 sm:p-12 text-center glow-red">
+      <div class="absolute inset-0 bg-gradient-to-t from-brandDark via-transparent to-transparent opacity-80"></div>
+      <div class="relative z-10 max-w-2xl mx-auto space-y-4">
+        <span class="inline-block bg-red-950/80 border border-red-600/40 text-red-400 text-xs font
